@@ -12,7 +12,7 @@
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta
       name="description"
-      content="Yuvan is a student currenly enrolled in Mahatma Gandhi Institute"
+      content="Yuvan is a student currenly enrolled at the University of Mauritius, studying Software Engineering."
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
@@ -21,7 +21,7 @@
     <div id="page-wrapper">
     </div>
       <!-- Header -->
-      <!--<div id="header-template"><!--Your header.html placeholder</div>-->
+      <!--<div id="header-template">!--Your header.html placeholder</div>-->
       <header id="header">
         <h1 id="logo"><a href="/index.html">Home</a></h1>
         <nav id="nav">
@@ -47,7 +47,7 @@
             </li> -->
             </li>
             
-           <li><a href="#four" >Projects</a></li>
+           <li><a href="#five" >Projects</a></li>
               
 					<!--	<li><a href="/publications.html">Publications</a></li>
 							<li><a href="/posts/index.html">Posts</a></li> -->
@@ -86,7 +86,7 @@
               <div class="col-4 col-12-medium">
                 <h2>About me</h2>
                 <p>
-                  Born on the 14<sup>th</sup> of August 2005 making me a 15 year
+                  I was born on the 14<sup>th</sup> of August 2005 making me a <span id="age"></span> year
                   old teenager currently living in the Northen part of
                   <a
                     href="https://en.wikipedia.org/wiki/Mauritius"
@@ -96,17 +96,31 @@
                   >
                 </p>
               </div>
+                      <script>
+                        // Update age based on birthday
+                        function calculateAge(birthDate) {
+                          const today = new Date();
+                          const birth = new Date(birthDate);
+                          let age = today.getFullYear() - birth.getFullYear();
+                          const m = today.getMonth() - birth.getMonth();
+                          if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
+                            age-=1;
+                          }
+                          return age;
+                        }
+                        document.getElementById('age').textContent = calculateAge('2005-08-14');
+                      </script>
               <div class="col-4 col-12-medium">
                 <h2>&nbsp;</h2>
                 <p>
-                  Travelling more than 30km per day for school at
+                  Currently enrolled at the <a href="https://www.uom.ac.mu/" style="color:#F0FFFF" target="_blank">University of Mauritius</a>
+                  studying Software Engineering, previously attended
                   <a
                     href="https://www.mgirti.ac.mu/"
                     style="color:#F0FFFF"
                     target="_blank"
                     >Mahatma Gandhi Institute</a
-                  >, I'd say I'm a well-driven student working hard to attain my
-                  dreams of being a Software Engineer or a Pilot.
+                  >.
                 </p>
               </div>
               <div class="col-4 col-12-medium">
@@ -149,7 +163,7 @@
         /></span>
         <div class="content">
           <header>
-            <h2>School</h2>
+            <h2>Mahatma Gandhi Institute</h2>
             <p></p>
           </header>
           <p>
@@ -178,8 +192,45 @@
       <!-- Three -->
       <section id="three" class="spotlight style3 left">
         <span class="image fit main bottom"
+          ><img src = "images/uom1.jpeg"
+            alt="University of Mauritius"
+        /></span>
+        <div class="content">
+          <header>
+            <h2>University of Mauritius</h2>
+            <p></p>
+          </header>
+          <p>
+            The University of Mauritius (UoM) is the oldest and largest
+            university in Mauritius. It was established in 1965 as a
+            non-profit public higher education institution. UoM offers a wide
+            range of undergraduate and postgraduate programs across various
+            disciplines, including science, engineering, humanities, and social
+            sciences. It is known for its research contributions and has
+            partnerships with several international universities and research
+            institutions. The university's campus is located in Réduit.
+          </p>
+<p></p>
+          <ul class="actions">
+            <li>
+              <a
+                href="https://www.uom.ac.mu/"
+                target="_blank"
+                class="button"
+                >Learn more</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="#four" class="goto-next scrolly">Next</a>
+      </section>
+
+
+      <!-- Four -->
+      <section id="four" class="spotlight style4 right">
+        <span class="image fit main bottom"
           ><img
-            src="https://cdn.glitch.com/2ff7d0be-899a-4917-b805-e468ae0ef9f1%2F60144316a7c0c4001991dde6.jpg?v=1619211814500"
+            src="images/programming1.jpg"
             alt=""
         /></span>
         <div class="content">
@@ -207,21 +258,25 @@
             </li>
           </ul> -->
         </div>
-        <a href="#four" class="goto-next scrolly">Next</a>
+        <a href="#five" class="goto-next scrolly">Next</a>
       </section>
 
-      <!-- Four -->
+      <!-- Five -->
     
-     <section id="four" class="wrapper style1 special fade-up">
+     <section id="five" class="wrapper style1 special fade-up">
       </section>
        
        
          <header class="major">
            
             <h2>Recent Work</h2>
-  
-          </header>
-       
+      </header>
+
+<div style="text-align: center; margin: 30px 0; font-size: 2em; color: #fff;">
+  <a href="#" style="color: inherit; text-decoration: none;">To be released soon.</a>
+</div>
+
+ <!--    
 <div class="cards-list">
   <a href = "discord-work.html">
     <div class="card1">
@@ -231,6 +286,7 @@
     
   </div>
 </div>
+-->
 
   <!-- <div class="card 2">
   <div class="card_image">
@@ -250,7 +306,7 @@
   </div> 
 </div> -->
     
-    <a href = "https://testweb69.glitch.me/">
+<!--    <a href = "https://testweb69.glitch.me/">
   <div class="card1">
   <div class="card_image">
     <img src="https://cdn.dribbble.com/users/441326/screenshots/3165191/spotify-gif---oliver-keane.gif"/>
@@ -264,7 +320,7 @@
     </a>
     </div>
   
-    
+  -->
     <!--  <section class="col-4 col-6-medium col-12-xsmall">
                 <span class="image fit"
                   ><img src="/images/terrain-generator/map11sqr.jpg" alt=""
