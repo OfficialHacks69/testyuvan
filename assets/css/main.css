@@ -1,3 +1,7 @@
+/* Remove red line under card links */
+.cards-list a {
+  border-bottom: none !important;
+}
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
