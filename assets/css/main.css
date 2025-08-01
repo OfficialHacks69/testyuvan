@@ -2186,12 +2186,9 @@ input, select, textarea {
 	}
 
 		header.major:after {
-			background: #e44c65;;
+			background: transparent;
 			content: '';
-			display: inline-block;
-			height: 0.2em;
-			max-width: 20em;
-			width: 75%;
+			display: none;
 		}
 
 	footer.major {
@@ -3137,7 +3134,7 @@ input, select, textarea {
 			border-left-width: 0.35em;
 			right: 0;
 		}
-    .spotlight.style1 .content {	
+	.spotlight.style1 .content {	
 			border-color: #e44c65;	
 		}	
 		.spotlight.style2 .content {	
@@ -4155,7 +4152,7 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 .card1:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
+	-5px -5px 30px 15px rgba(0,0,0,0.22);
 }
 
 .title-white {
